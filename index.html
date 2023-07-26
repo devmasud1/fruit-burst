@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/37cb6cca1d.js" crossorigin="anonymous"></script>
 </head>
 
 <script>
@@ -24,6 +26,7 @@
           "banner-bg2": "url('./images/banner/banner2.png')",
           "banner-bg3": "url('./images/banner/banner3.png')",
           "banner-bg4": "url('./images/banner/banner4.png')",
+          "team-bg": "url('./images/team/team.png')",
         },
       },
     },
@@ -33,6 +36,15 @@
 <style>
   .lato {
     font-family: "Lato", sans-serif;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
 
@@ -378,6 +390,69 @@
     </section>
     <!-- Deal of the day section End-->
 
+    <!-- Team Section -->
+    <section class="container mx-auto my-20">
+      <div class="hero bg-banner-bg bg-no-repeat bg-cover text-white text-center  pb-1">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="w-full">
+          <div class="pt-20">
+            <h1 class="text-3xl lg:text-4xl font-extrabold">Meet the team section</h1>
+            <p class="text-base font-medium my-6">
+              Contrary to popular belief, is not simply random text. It has roots in a
+              piece of classical <br>
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Member 1 -->
+            <div class="m-auto my-6">
+              <img src="./images/member/member1.png" alt="">
+              <h3 class="text-2xl font-bold mt-6">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex gap-5 justify-center my-5 cursor-pointer">
+                <i class="fa-brands fa-facebook  text-3xl "></i>
+                <i class="fa-brands fa-twitter    text-3xl "></i>
+                <i class="fa-brands fa-instagram   text-3xl "></i>
+              </div>
+            </div>
+            <!-- Member 2 -->
+            <div class="m-auto my-6">
+              <img src="./images/member/member2.png" alt="">
+              <h3 class="text-2xl font-bold mt-6">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex gap-5 justify-center my-5 cursor-pointer">
+                <i class="fa-brands fa-facebook  text-3xl "></i>
+                <i class="fa-brands fa-twitter    text-3xl "></i>
+                <i class="fa-brands fa-instagram   text-3xl "></i>
+              </div>
+            </div>
+            <!-- Member 3 -->
+            <div class="m-auto my-6">
+              <img src="./images/member/member3.png" alt="">
+              <h3 class="text-2xl font-bold mt-6">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex gap-5 justify-center my-5 cursor-pointer">
+                <i class="fa-brands fa-facebook  text-3xl "></i>
+                <i class="fa-brands fa-twitter    text-3xl "></i>
+                <i class="fa-brands fa-instagram   text-3xl "></i>
+              </div>
+            </div>
+            <!-- Member 4 -->
+            <div class="m-auto my-6">
+              <img src="./images/member/member4.png" alt="">
+              <h3 class="text-2xl font-bold mt-6">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <div class="flex gap-5 justify-center my-5 cursor-pointer">
+                <i class="fa-brands fa-facebook  text-3xl "></i>
+                <i class="fa-brands fa-twitter    text-3xl "></i>
+                <i class="fa-brands fa-instagram   text-3xl "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section End-->
   </main>
   <footer></footer>
 </body>
