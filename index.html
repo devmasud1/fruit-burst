@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
-    <link rel="shortcut icon" href="./images/favicon/fav.io" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/fav.io"
+      type="image/x-icon"
+    />
     <!-- Tailwind & daisyUi -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -21,15 +25,91 @@
     />
   </head>
   <style>
-    .lato{
-        font-family: 'Lato', sans-serif;
+    .lato {
+      font-family: "Lato", sans-serif;
     }
   </style>
   <body class="lato">
-    <header></header>
-    <main>
-        <h1>Hello world</h1>
-    </main>
+    <header>
+      <nav
+        class="container mx-auto navbar bg-[#F85559] text-white justify-between px-5 rounded-3xl"
+      >
+        <div class="flex-1 hidden lg:block">
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-medium">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-row items-center gap-2 flex-1 lg:justify-center">
+          <img
+            src="./images/logo/logo.png"
+            alt="logo"
+            class="w-1/6 lg:w-1/12"
+          />
+          <h1 class="text-2xl lg:text-4xl font-semibold lg:font-bold">
+            Fruit Burst
+          </h1>
+        </div>
+        <div class="flex-1 justify-end">
+          <div class="flex items-center opacity-0 lg:opacity-100">
+            <input
+              type="text"
+              class="w-auto outline-none rounded-full py-3 px-4 text-sm text-black focus:ring focus:ring-blue-300"
+            />
+            <!-- SVG Icon -->
+            <svg
+              class="w-6 h-6 -ml-10 cursor-pointer text-gray-600 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div class="dropdown relative">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-800 rounded-box absolute right-0 w-40 text-center"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
     <footer></footer>
   </body>
 </html>
